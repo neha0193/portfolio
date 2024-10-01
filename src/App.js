@@ -1,25 +1,41 @@
-import logo from './logo.svg';
+
 import './App.css';
+import Project from './components/Project';
+import Home from './components/Home';
+import Contactme from './components/Contactme';
+import { Route, Routes, Link } from 'react-router-dom';
+//import DarkMode from './DarkMode';
+
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className='header'>
+        <Link to="/" className='nav-item'>Home</Link>
+        <Link to="/projects" className='nav-item'>Projects</Link>
+        <Link to="/Contact" className='nav-item'>Contact me</Link>
+      </div>
+      <div className='main'>
+      <Routes>
+        <Route path='/' element={<Home/>}></Route>
+        <Route path='/projects' element={<Project />}></Route>
+        <Route path='/Contact' element={<Contactme />}></Route>
+      </Routes>
+      </div>
+      <div className='footer'>
+        <a href='https://github.com/saiva19' target='_blank'className='nav-items'>github</a>
+        <a href='https://github.com/saiva19' target='_blank'className='nav-items'>twitter</a>
+        <a href='https://github.com/saiva19' target='_blank'className='nav-items'>linkedin</a>
+        <a href='https://github.com/saiva19' target='_blank'className='nav-items'>medium</a>
+      </div>
+
     </div>
   );
 }
 
 export default App;
+// make a nav bar and footer bar that gives links to my social
+// set a simple background or dark color
+// make it simple and do it
+
