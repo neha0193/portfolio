@@ -17,7 +17,7 @@ const Contactme = () => {
 
     const handleSubmit = (e) => {
       e.preventDefault();
-      alert("query Submitted!");
+      alert("Thank you for reaching us, we will get back to you soon !!");
       clearForm();
     };
 
