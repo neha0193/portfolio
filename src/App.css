@@ -1,149 +1,157 @@
 * {
-    padding: 2px;
-    background-color: rgb(27, 18, 18);
-    color: white;
+  padding: 2px;
+  background-color: rgb(27, 18, 18);
+  color: white;
 }
 
+/* Hide scrollbar for the entire page not a good idea
+body {
+  overflow: hidden;
+}*/
+
 .App {
-    /* Add rules here */
-    display: grid;
-    max-width: 100%;
-    min-height: 100vh;
-    grid-template-columns: 100%;
-    grid-template-rows: auto auto auto;
-    grid-template-areas: "header" "main" "footer"
+  /* Add rules here */
+  display: grid;
+  max-width: 100%;
+  min-height: 100dvh;
+  grid-template-columns: 100%;
+  grid-template-rows: auto auto auto;
+  grid-template-areas: "header" "main" "footer"
 }
 
 @media (min-width: 440px) {
-    .App {
+  .App {
     grid-template-rows: auto auto auto;
     grid-template-areas: "header" "main" "footer";
-    }
+  }
 }
 
 .header {
-    grid-area: header;
-    padding: 10px;
-    text-align: center;
+  grid-area: header;
+  padding: 10px;
+  text-align: center;
 }
+
 .footer {
-    grid-area: footer;
-    padding: 10px;
-    text-align: center;
-  }
+  grid-area: footer;
+  padding: 10px;
+  text-align: center;
+}
 
 .main {
-    grid-area: main;
+  grid-area: main;
 }
 
 .nav-item {
-    float: center;
-    font-family: 'Courier New', Courier, monospace;
-    display: inline;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
+  float: center;
+  font-family: 'Courier New', Courier, monospace;
+  display: inline;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
 }
 
 .nav-items {
-    float: center;
-    font-family: 'Courier New', Courier, monospace;
-    display: inline;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
+  float: center;
+  font-family: 'Courier New', Courier, monospace;
+  display: inline;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
 }
 
 .mains {
-    margin-left: 35%;
-    margin-top:13%;
-    margin-bottom:13%;
+  display: flex;
+  padding-left: 35%;
+  padding-bottom: 13%;
+  padding-top: 13%;
 }
 
+
 .forms {
-    position: relative;
-    font-family: Arial, Helvetica, sans-serif;
+  position: relative;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 fieldset {
-    margin-top:2%;
-    margin-bottom:4%;
-    margin-left: 32%;
-    display: flex;
-    width: 480px;
-    padding: 16px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    flex-direction: column;
-  }
+  margin-top: 2%;
+  margin-bottom: 4%;
+  margin-left: 32%;
+  display: flex;
+  width: 480px;
+  padding: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  flex-direction: column;
+}
 
-  label {
-    margin-bottom: 8px;
-    font-size: 14px;
-  }
+label {
+  margin-bottom: 8px;
+  font-size: 14px;
+}
 
-  sup {
-    color: red;
-    top: -2px;
-    font-size: 95%;
-    line-height: 0;
-    position: relative;
-    vertical-align: baseline;
-  }
+sup {
+  color: red;
+  top: -2px;
+  font-size: 95%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
 
-  input,
-  select {
-    border-radius: 4px;
-    border: 1px solid #ccc;
-    height: 32px;
-    padding: 0 8px;
-  }
+input,
+select {
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  height: 32px;
+  padding: 0 8px;
+}
 
-  .Field {
-    position: relative;
-    padding-bottom: 24px;
-    display: flex;
-    flex-direction: column;
-  }
+.Field {
+  position: relative;
+  padding-bottom: 24px;
+  display: flex;
+  flex-direction: column;
+}
 
-  .FieldError {
-    position: absolute;
-    bottom: -6px;
-    color: red;
-    font-size: 12px;
-  }
+.FieldError {
+  position: absolute;
+  bottom: -6px;
+  color: red;
+  font-size: 12px;
+}
 
-  button {
-    padding: 12px;
-    width: 240px;
-    border-radius: 4px;
-    border: 1px solid #ccc;
-    color: black;
-    background-color: white;
-    text-transform: uppercase;
-    font-size: 14px;
-    font-weight: bold;
-    cursor: pointer;
-  }
+button {
+  padding: 12px;
+  width: 240px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  color: black;
+  background-color: white;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+}
 
-  button:disabled,
-  button[disabled] {
-    border: 1px solid #999999;
-    background-color: #cccccc;
-    color: #666666;
-    cursor: not-allowed;
-  }
+button:disabled,
+button[disabled] {
+  border: 1px solid #999999;
+  background-color: #cccccc;
+  color: #666666;
+  cursor: not-allowed;
+}
 
-  .card {
-    display: flex;
-    flex-wrap: wrap;
-  }
+.card {
+  display: flex;
+  flex-wrap: wrap;
+}
 
-  .card-item {
-    margin: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+.card-item {
+  margin: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
 
-  }
+}

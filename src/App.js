@@ -1,4 +1,3 @@
-
 import './App.css';
 import Project from './components/Project';
 import Home from './components/Home';
@@ -24,7 +23,7 @@ function App() {
       </Routes>
       </div>
       <div className='footer'>
-        <a href='https://github.com/saiva19' target='_blank'className='nav-items'>github</a>
+        <a href='https://github.com/neha0193' target='_blank'className='nav-items'>github</a>
         <a href='https://x.com/JuneExplorer' target='_blank'className='nav-items'>twitter</a>
         <a href='https://www.reddit.com/user/Mundane-Mine2399/' target='_blank'className='nav-items'>reddit</a>
         <a href='mailto:neha031919@gmail.com' target='_blank'className='nav-items'>mail me</a>
