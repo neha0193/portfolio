@@ -29,7 +29,7 @@ const Contactme = () => {
   };
 
   return (
-    <div className="form">
+    <div className="forms">
       <form onSubmit={handleSubmit} >
         <fieldset>
           <h2>Contact me</h2>
@@ -52,7 +52,7 @@ const Contactme = () => {
             </select>
           </div>
           <div className='Field'>
-            <label>Your message<sup>*</sup></label><br />
+            <label>Your message<sup>*</sup></label>
             <textarea value={comment} class="fixed-width" rows="4" onChange={e => setComment(e.target.value) }  minLength="2" required/>
           </div>
           <button type="submit" > Submit </button>
