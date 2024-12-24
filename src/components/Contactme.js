@@ -1,31 +1,6 @@
 import React from 'react'
 import { useState } from 'react';
 import { validateEmail } from "../utils";
-/*
-const NameErrorMessage = () => {
-  return (
-    <p className="FieldError">Please enter a name</p>
-  );
-};
-
-const EmailErrorMessage = () => {
-  return (
-    <p className="FieldError">Please enter a valid email</p>
-  );
-};
-
-const RoleErrorMessage = () => {
-  return (
-    <p className="FieldError">Please select a role</p>
-  );
-};
-
-const CommentErrorMessage = () => {
-  return (
-    <p className="FieldError">Please describe your concern</p>
-  );
-};*/
-
 
 const Contactme = () => {
   const [firstName, setFirstName] = useState("");

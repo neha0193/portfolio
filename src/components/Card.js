@@ -5,7 +5,7 @@ const Card = (props) => {
         <div>
 
             <div className='card-item'>
-                <img src={props.photo} alt='project photo' height="340px" width="340px" />
+                <img src={props.photo} alt='project photo' height="240px" width="240px" />
                 <h2>{props.title}</h2>
                 <p>{props.description}</p>
                 <a href={props.url} target='_blank'>see more </a>➡️

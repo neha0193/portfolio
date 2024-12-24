@@ -67,7 +67,7 @@ body {
 
 fieldset {
   margin-top: 2%;
-  margin-bottom: 4%;
+  margin-bottom: 2%;
   margin-left: 32%;
   display: flex;
   width: 480px;
@@ -78,7 +78,7 @@ fieldset {
 }
 
 label {
-  margin-bottom: 8px;
+  margin-bottom: 5px;
   font-size: 14px;
 }
 
