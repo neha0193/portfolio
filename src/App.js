@@ -3,9 +3,6 @@ import Project from './components/Project';
 import Home from './components/Home';
 import Contactme from './components/Contactme';
 import { Route, Routes, Link } from 'react-router-dom';
-//import DarkMode from './DarkMode';
-
-
 
 function App() {
   return (
