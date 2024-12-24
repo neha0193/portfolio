@@ -7,7 +7,7 @@ import Card from './Card'
 
 const Project = () => {
   return (
-    <div>
+    <div className='project'>
       <h1>Featured Projects...</h1>
       <div className='card'>
         <Card photo={fig1} title="Clock app" description="Clock app with quotes API" url="https://clock-app-red.vercel.app/.com/saiva19" />
