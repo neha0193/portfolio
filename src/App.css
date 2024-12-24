@@ -75,11 +75,10 @@ p {
 
 fieldset {
   margin: 8px;
-  width: 440px;
+  width: 420px;
   padding: 16px;
   border: 1px solid #ccc;
   border-radius: 4px;
-  flex-direction: column;
 }
 
 label {
